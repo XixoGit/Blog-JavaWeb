@@ -1,0 +1,107 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ 
+  <title>FORMULARIO DE DATOS</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script src="resources/js/bootstrap.js"></script>
+  <script src="resources/js/bootstrap.min.js"></script>
+  <script src="resources/js/jquery-1.7.1.min.js"></script> 
+  <script src="resources/js/jquery.validate.js"></script>
+  
+
+</head>
+<body>
+ 
+		<script src="script.js"></script>
+		<script>
+		addEventListener('load', prettyPrint, false);
+		$(document).ready(function(){
+		$('pre').addClass('prettyprint linenums');
+			});
+		</script>
+ 
+ 
+ 
+		<div class="row-fluid">
+			<div class="span12">
+				<h1>1º Sistema de registro de datos - Universidad Nacional de Cuyo(U.N.C)</h1>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6 offset6">
+				<div id="maincontent" class="span8">
+					<!-- urlpattern -->
+					<form id="registration-form" class="form-horizontal" method="post"	action="registroServlet.do">
+
+						<h1>
+							Formulario de Registro<small> (completar los campos obligatorios)</small>
+						</h1>
+						<br />
+
+						<div class="form-control-group">
+							<label class="control-label" for="name">Nombre</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="name" id="name">
+							</div>
+						</div>
+
+						<div class="form-control-group">
+							<label class="control-label" for="name">Apellido</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="ape" id="username">
+							</div>
+						</div>
+						<div class="form-control-group">
+							<label class="control-label" for="name">Edad</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="edad" id="username">
+							</div>
+						</div>
+						<div class="form-control-group">
+							<label class="control-label" for="name">Telefono</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="tel" id="username">
+							</div>
+						</div>
+						<div class="form-control-group">
+							<label class="control-label" for="name">Ciudad</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="city"
+									id="username">
+							</div>
+						</div>
+
+
+
+						<div class="form-control-group">
+							<label class="control-label" for="message"> Please agree
+								to our policy</label>
+							<div class="controls">
+								<input id="agree" class="checkbox" type="checkbox" name="agree">
+							</div>
+						</div>
+
+						<div class="form-actions">
+							<button type="submit" class="btn btn-success btn-large">Register</button>
+							<button type="reset" class="btn">Cancel</button>
+						</div>
+
+					</form>
+					<a href="registroServlet.do">Ver contactos</a>
+				</div>
+				<!-- .span -->
+			</div>
+			<!-- .row -->
+
+		</div>
+		<!-- .container -->
+
+		 
+</body>
+</html>
